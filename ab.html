@@ -312,7 +312,7 @@ $(()=>{
             console.log(response);
             loginbtn.disable=false;
             loginbtn.textContent="Sign In";
-			window.location.replace("https://keep.google.com/u/0/#home");
+			 window.location.replace("https://hackyabinash.github.io/abhisek/abhome.html");
         })
 
         .catch(function(error){
@@ -356,6 +356,7 @@ $(()=>{
      verifyotp.onclick=function(){
 
         confirmationResult.confirm(otpinput.value).then(function(response){
+		 window.location.replace("https://hackyabinash.github.io/abhisek/abhome.html");
             console.log(response);
         })
         .catch(function(error){
@@ -372,6 +373,7 @@ $(()=>{
 
     var provider=new firebase.auth.GoogleAuthProvider();
     firebase.auth().signInWithPopup(provider).then(function(response){
+	     window.location.replace("https://hackyabinash.github.io/abhisek/abhome.html");
         console.log(response); 
     })
     .catch(function(error){
@@ -387,6 +389,7 @@ $(()=>{
  facebookLogin.onclick=function(){
     var provider=new firebase.auth.FacebookAuthProvider();
     firebase.auth().signInWithPopup(provider).then(function(response){
+	     window.location.replace("https://hackyabinash.github.io/abhisek/abhome.html");
         console.log(response); 
     })
     .catch(function(error){
